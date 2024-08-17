@@ -1,3 +1,28 @@
 pip install jax-f16
 https://x13fhotk.f855.vip/
 [![.github/workflows/main.yml](https://github.com/ThaiTuTuan/Hot/actions/workflows/main.yml/badge.svg?event=deployment_status)](https://github.com/ThaiTuTuan/Hot/actions/workflows/main.yml)
+            - tên: Tải lên một hiện vật xây dựng
+  sử dụng: hành động/upload-artifact@v4.3.6
+  với:
+    # Tên hiện vật
+    tên: # tùy chọn, mặc định là hiện vật
+    # Một tệp, thư mục hoặc mẫu ký tự đại diện mô tả những gì cần tải lên
+    con đường:
+    # Hành vi mong muốn nếu không tìm thấy tệp nào sử dụng đường dẫn được cung cấp.
+Các tùy chọn có sẵn:
+  cảnh báo: Đưa ra cảnh báo nhưng không làm hỏng hành động
+  lỗi: Không thực hiện được hành động với thông báo lỗi
+  bỏ qua: Không đưa ra bất kỳ cảnh báo hoặc lỗi nào, hành động không thất bại
+
+    if-no-files-found: # tùy chọn, mặc định là cảnh báo
+    # Khoảng thời gian sau đó hiện vật sẽ hết hạn tính bằng ngày. 0 nghĩa là sử dụng chế độ lưu giữ mặc định.
+Tối thiểu 1 ngày. Tối đa 90 ngày trừ khi có thay đổi từ trang cài đặt kho lưu trữ.
+
+    ngày lưu giữ: # tùy chọn
+    # Mức độ nén của Zlib được áp dụng cho kho lưu trữ hiện vật. Giá trị có thể nằm trong khoảng từ 0 đến 9: - 0: Không nén - 1: Tốc độ tốt nhất - 6: Nén mặc định (giống như GNU Gzip) - 9: Nén tốt nhất Các mức cao hơn sẽ cho kết quả nén tốt hơn, nhưng sẽ mất nhiều thời gian hơn để hoàn tất. Đối với các tệp lớn không dễ nén, giá trị 0 được khuyến nghị để tải lên nhanh hơn đáng kể.
+
+    compression-level: # tùy chọn, mặc định là 6
+    # Nếu đúng, một hiện vật có tên trùng khớp sẽ bị xóa trước khi một hiện vật mới được tải lên. Nếu sai, hành động sẽ thất bại nếu hiện vật cho tên đã cho đã tồn tại. Không thất bại nếu hiện vật không tồn tại.
+
+    ghi đè: # tùy chọn, mặc định là sai
+          
